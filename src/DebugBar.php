@@ -1,8 +1,8 @@
 <?php
 
-use DebugBar\StandardDebugBar;
-
 namespace B2\Debug;
+
+use DebugBar\StandardDebugBar;
 
 class DebugBar
 {
@@ -31,5 +31,11 @@ class DebugBar
 	function body()
 	{
 		return $this->debugbarRenderer->render();
+	}
+
+	static function bors_register_in_view($view)
+	{
+		$view->append_head(self::class);
+		$view->append_body(self::class);
 	}
 }
