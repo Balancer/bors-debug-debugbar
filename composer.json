@@ -20,5 +20,9 @@
 		"psr-4": {
 			"B2\\Debug\\": "src"
 		}
+	},
+
+	"extra": {
+		"bors-register": "B2\\Debug\\DebugBar"
 	}
 }
