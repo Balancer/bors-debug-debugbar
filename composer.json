@@ -23,6 +23,6 @@
 	},
 
 	"extra": {
-		"bors-register": "B2\\Debug\\DebugBar"
+		"bors-register-view": "B2\\Debug\\DebugBar"
 	}
 }
