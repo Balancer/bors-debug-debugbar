@@ -6,6 +6,7 @@ use DebugBar\StandardDebugBar;
 
 class DebugBar
 {
+	var $debugbar;
 	var $debugbarRenderer;
 
 	static function instance()
@@ -17,6 +18,8 @@ class DebugBar
 			$debugbarRenderer = $debugbar->getJavascriptRenderer();
 
 			$instance = new DebugBar;
+
+			$instance->debugbar = $debugbar;
 			$instance->debugbarRenderer = $debugbarRenderer;
 		}
 
